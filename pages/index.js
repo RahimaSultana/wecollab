@@ -1,7 +1,9 @@
 import Head from 'next/head'
 
 
+
 export default function Home() {
+ 
   return (
     <div>
       <Head>
@@ -12,7 +14,7 @@ export default function Home() {
 
       <main>
 
-        <h1>This is the main Page</h1>
+        <h1>Hello welcome</h1>
       </main>
 
    
