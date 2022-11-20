@@ -60,15 +60,15 @@ checkUser()
 },[user,loading])
 
   return (
-    <div className='my-20 p-12 shadow-lg rounded-lg max-w-md mx-auto'>
+    <div>
         <form onSubmit={submitPost}>
-            <h1 className='text-2xl font-bold'>{post.hasOwnProperty('id')?'Edit your Post':'Create a new Post'}</h1>
-            <div className='py-2'>
-                <h3 className='text-lg font-meduim py-2'>Description</h3>
-                <textarea value={post.description} onChange={(e=>setPost({...post,description:e.target.value}))} className='bg-gray-800 h-48 w-full text-white rounded-lg p-2 text-sm'></textarea>
+            <h1>{post.hasOwnProperty('id')?'Edit your Post':'Create a new Post'}</h1>
+            <div>
+                <h3>Description</h3>
+                <textarea value={post.description} onChange={(e=>setPost({...post,description:e.target.value}))}></textarea>
                 <p>{post.description.length}/300</p>
             </div>
-            <button type='submit' className='w-full bg-cyan-800 text-white font-medium p-2 y-2 round-lg text-sm'>Submit</button>
+            <button type='submit'>Submit</button>
 
         </form>
     </div>

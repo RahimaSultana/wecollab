@@ -36,7 +36,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-     <div className='my-12 text-lg font-medium'>
+     <div>
       <h1>See what other prople are saying</h1>
       {allPosts.map(post=><Posts {...post} key={post.id} />)}
      </div>

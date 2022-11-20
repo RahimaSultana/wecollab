@@ -5,6 +5,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  /* background-image: url('https://www.codlearningtech.org/wp-content/uploads/2020/07/discussionboard-1.png'); */
   
 }
 
@@ -20,18 +21,23 @@ a {
 nav{
   display: flex;
   justify-content: space-between;
-  background-color:lightgrey;
-  margin: 20px;
-  padding: 15px;
+  height: 80px;
+  /* background-color:rgb(121, 121, 240); */
+  /* margin: 20px;
+  padding: 15px; */
+  background-color:rgb(166, 10, 244);
 }
 nav button{
-  font-size:large
+  font-size:20px;
+  color: white;
+
 }
 ul button{
-  background-color: cyan;
+  background-color:rgb(94, 9, 136);
   padding: 5px;
   border-radius: 10px;
-  /* color: white; */
+  margin-right: 50px;
+  color: white;
 }
 .login-container{
 display: flex;
@@ -58,5 +64,40 @@ box-shadow: 5px 10px 5px 10px lightgray;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-right: 0px;
 }
+
+.container{
+  /* width: 100%; */
+  /* max-width: auto-resize; */
+  background-image: url('https://assets.materialup.com/uploads/13d00ae4-b90b-41e1-b976-fc06dff8de12/preview.png');
+  height: 100vh;
+  /* max-height: max-content; */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  /* background-color: #1A1A1A; */
+}
+
+ .container h1{
+  text-align: center;
+  font-weight:bold ;
+  font-size: 40px;
+} 
+
+.container a{
+  text-align: center;
+  font-weight:bold ;
+  font-size: 40px;
+  margin-left: 600px;
+  margin-top: 1000px;
+  /* color: #6c0885; */
+} 
+
+@media screen and (min-width: 600px) {
+.container{
+    min-width: 100%;
+ }
+}
+
+
 

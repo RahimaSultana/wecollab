@@ -25,7 +25,7 @@ function Nav() {
       }
       {/* <img src={user.photoURL} alt="user photo" /> */}
       {user && (
-        <div className='flex items-center gap-6'>
+        <div >
          <Link href='/post'>
          <button>Post</button> 
        </Link> 

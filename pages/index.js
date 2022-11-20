@@ -9,19 +9,12 @@ import Link from 'next/link'
 
 
 export default function Home() {
-
-
-  
- 
   return (
-    <div>
+    <div className='container'>
    
-<h1>This is the home page</h1>
-<Link href='/allposts'>See what other people are Posting</Link>
-<div>
-  <h2>Heena is my name</h2>
-</div>
-   
-    </div>
+<h1>Welcome to WeCollab App</h1>
+<a href='/allposts'>
+   Lets Get Started </a>
+  </div>
   )
 }
