@@ -1,8 +1,9 @@
 import Head from 'next/head'
 import Posts from '../components/posts'
+import Link from 'next/link'
 import {useState,useEffect} from 'react'
 import {db} from '../firebase'
-import { collection, onSnapshot } from 'firebase/firestore'
+import { collection, onSnapshot, query } from 'firebase/firestore'
 
 
 
@@ -38,7 +39,11 @@ export default function Home() {
 
      <div>
       <h1>See what other prople are saying</h1>
-      {allPosts.map(post=><Posts {...post} key={post.id} />)}
+      {allPosts.map(post=><Posts {...post} key={post.id} >
+        <Link href={{pathname:`/${post.id}`,query:{...post}}}>
+          <button>{post.comments?.lenght}comments</button>
+        </Link>
+        </Posts>)}
      </div>
 
    

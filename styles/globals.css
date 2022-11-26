@@ -473,3 +473,15 @@ color: white;
     color: white;
   }
   }
+
+
+  .post-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    border: 2px black solid;
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+  }

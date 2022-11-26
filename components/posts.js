@@ -2,7 +2,7 @@ import React from 'react'
 
 function posts({children,description,avatar,name}) {
   return (
-    <div >
+    <div className='post-container'>
         <div>
             <img src={avatar} alt="user image" />
             <h3>{name}</h3>
