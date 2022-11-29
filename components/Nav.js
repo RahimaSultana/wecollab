@@ -17,6 +17,9 @@ function Nav() {
       <Link href='/'>
      <button className='main-logo'>We Collab</button>
       </Link>
+      <Link href='/support'>
+        <button>Support</button>
+      </Link>
      <ul>
       {!user &&
       <Link href='/auth/login'>

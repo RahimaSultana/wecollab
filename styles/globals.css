@@ -484,4 +484,26 @@ color: white;
     border-radius: 15px;
     margin-bottom: 20px;
 
+    align-items: center;
+    
   }
+
+
+  /* css for the support page */
+  .support-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 70%;
+    margin: auto;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    margin-top: 50px;
+    padding: 40px;
+  }
+  .support-container h1{
+    margin-left: 350px;
+    font-size: 30px;
+    align-items: center;
+    
+  }
+  

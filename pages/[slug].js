@@ -62,7 +62,7 @@ getComments()
         </div>
         <div>
             <h2>Comments</h2>
-         {allMessages.map(post=>(
+         {allMessages?.map(post=>(
           <div>
             <div>
                 <img src={post.img} alt='user image' />
